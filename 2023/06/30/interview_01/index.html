@@ -1,0 +1,317 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>常见前端面试八股文（01） | xiaomeng</title><meta name="author" content="xiaomeng"><meta name="copyright" content="xiaomeng"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="常见前端开发基础面试题整理小结">
+<meta property="og:type" content="article">
+<meta property="og:title" content="常见前端面试八股文（01）">
+<meta property="og:url" content="https://usrnong.github.io/2023/06/30/interview_01/index.html">
+<meta property="og:site_name" content="xiaomeng">
+<meta property="og:description" content="常见前端开发基础面试题整理小结">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://i0.hippopx.com/photos/174/613/190/mountain-landscape-mountains-landscape-steinweg-thumb.jpg">
+<meta property="article:published_time" content="2023-06-29T16:00:00.000Z">
+<meta property="article:modified_time" content="2023-08-26T16:25:25.285Z">
+<meta property="article:author" content="xiaomeng">
+<meta property="article:tag" content="八股文">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://i0.hippopx.com/photos/174/613/190/mountain-landscape-mountains-landscape-steinweg-thumb.jpg"><link rel="shortcut icon" href="/img/favicon.jpg"><link rel="canonical" href="https://usrnong.github.io/2023/06/30/interview_01/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '常见前端面试八股文（01）',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2023-08-27 00:25:25'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+    win.getCSS = (url,id = false) => new Promise((resolve, reject) => {
+      const link = document.createElement('link')
+      link.rel = 'stylesheet'
+      link.href = url
+      if (id) link.id = id
+      link.onerror = reject
+      link.onload = link.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        link.onload = link.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(link)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><link rel="stylesheet" href="/css/post.css"><!-- hexo injector head_end start --><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Zfour/Butterfly-double-row-display@1.00/cardlistpost.min.css"/>
+<style>#recent-posts > .recent-post-item >.recent-post-info > .article-meta-wrap > .tags:before {content:"\A";
+  white-space: pre;}#recent-posts > .recent-post-item >.recent-post-info > .article-meta-wrap > .tags > .article-meta__separator{display:none}</style>
+<link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiperstyle.css" media="print" onload="this.media='all'"><!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/Avatar.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">26</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">5</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">5</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg fixed" id="page-header" style="background-image: url('https://i0.hippopx.com/photos/174/613/190/mountain-landscape-mountains-landscape-steinweg-thumb.jpg')"><nav id="nav"><span id="blog-info"><a href="/" title="xiaomeng"><span class="site-name">xiaomeng</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">常见前端面试八股文（01）</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-06-29T16:00:00.000Z" title="发表于 2023-06-30 00:00:00">2023-06-30</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-08-26T16:25:25.285Z" title="更新于 2023-08-27 00:25:25">2023-08-27</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95%E9%A2%98/">前端面试题</a></span></div><div class="meta-secondline"></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h2 id="1、客户端与服务端通常通过什么机制实现登录验证？"><a href="#1、客户端与服务端通常通过什么机制实现登录验证？" class="headerlink" title="1、客户端与服务端通常通过什么机制实现登录验证？"></a>1、客户端与服务端通常通过什么机制实现登录验证？</h2><ul>
+<li>HTTP Basic —— 每个接口都接受账号和密码</li>
+<li>OAuth —— 开放授权。允许第三方应用访问该用户在某一服务器上访问，无需将用户名和密码提供给第三方。每一个授权令牌接受一个特定的第三方系统，允许在特定时段访问（QQ、微信），适用于个人消费类的互联网产品，如社交app。</li>
+<li>cookie Auth </li>
+<li>Token Auth —— 无状态，不需要存储session信息。去耦，不需要绑定特定的身份认证方案。</li>
+</ul>
+<h2 id="2、什么是响应式以及css实现响应式的机制？"><a href="#2、什么是响应式以及css实现响应式的机制？" class="headerlink" title="2、什么是响应式以及css实现响应式的机制？"></a>2、什么是响应式以及css实现响应式的机制？</h2><ul>
+<li>根据不同的浏览器视口将页面（dom）以不同的形式展示出来的web应用程序<ol>
+<li>媒体查询</li>
+<li>flex</li>
+<li>grid</li>
+</ol>
+</li>
+</ul>
+<h2 id="3、html5的媒体标签："><a href="#3、html5的媒体标签：" class="headerlink" title="3、html5的媒体标签："></a>3、html5的媒体标签：</h2><ul>
+<li>audio video margaee</li>
+</ul>
+<h2 id="4、如何理解dom与bom？"><a href="#4、如何理解dom与bom？" class="headerlink" title="4、如何理解dom与bom？"></a>4、如何理解dom与bom？</h2><ol>
+<li>bom（浏览器对象模型）——是javascript开发web应用程序的核心，提供了与网页无关的浏览器功能对象Window，window可作为js的global对象，通过var声明的全局变量和函数都成为window的属性和方法。</li>
+<li>dom（文档对象模型）——是指HTML和XML文档编程接口。是多层节点构成文档、开发者通过它添加和删除、修改文档中的节点。</li>
+</ol>
+<h2 id="5、jq中的-get（）-和eq（）有什么区别？"><a href="#5、jq中的-get（）-和eq（）有什么区别？" class="headerlink" title="5、jq中的 get（） 和eq（）有什么区别？"></a>5、jq中的 get（） 和eq（）有什么区别？</h2><ul>
+<li>get（）用与转换成dom对象， eq（）是用于选择节点指定的index元素的方法</li>
+</ul>
+<h2 id="6、对于js模块化的理解？"><a href="#6、对于js模块化的理解？" class="headerlink" title="6、对于js模块化的理解？"></a>6、对于js模块化的理解？</h2><ul>
+<li><p>commonjs 是一种广泛使用的javascript模块化规范，核心思想是通过require方法来同步加载依赖的其他模块，通过modulem.exports到处需要暴露的接口。commonjs的流行得益于nodejs也采用了这种方式，后来这种方法也被应用到网页开发中。</p>
+<blockquote>
+<p>优点：代码可复用在nodejs环境，很多第三方采用的模块化方式。</p>
+</blockquote>
+<blockquote>
+<p>缺点：无法直接在浏览器环境下运行，必须通过工具转换成es才能运行。</p>
+</blockquote>
+</li>
+<li><p>AMD 也是一种模块化规范，与commonjs不同的是它采用异步的方式去加载模块。AMD规范是为了解决针对浏览器环境的模块化问题。最具有代表性的就是requirejs。</p>
+<blockquote>
+<p>优点：直接在浏览器环境下运行，也可在node环境下运行，可异步加载，可并行加载。</p>
+</blockquote>
+<blockquote>
+<p>缺点：JavaScript原生环境中没有支持AMD，需要导入实现了AMD的库后才能正常使用。</p>
+</blockquote>
+</li>
+<li><p>ES6 是ECMA提出的一种新的模块化规范，它在语言层面上实现了模块化，浏览器和node都宣布要原生支持该规范，它将逐步取代commonjs和AMD，成为最终的解决方案。</p>
+<blockquote>
+<p>缺点：无法直接运行在大部分的JavaScript环境，必须通过工具转换成为标准es5后才能运行。</p>
+</blockquote>
+</li>
+</ul>
+<h2 id="7、什么是闭包？"><a href="#7、什么是闭包？" class="headerlink" title="7、什么是闭包？"></a>7、什么是闭包？</h2><ul>
+<li>闭包是一个函数加到创建函数的作用域的链接，闭包关闭了函数的自由变量。<blockquote>
+<p>内部函数可以访问到外部函数的变量；变量会驻留在内存当中，会造成内存损耗的问题（把闭包函数清除即可）</p>
+</blockquote>
+</li>
+</ul>
+<h2 id="8、js延迟加载的方式？"><a href="#8、js延迟加载的方式？" class="headerlink" title="8、js延迟加载的方式？"></a>8、js延迟加载的方式？</h2><ul>
+<li>asyn：与html解析一起，并不是顺次执行js，谁先加载执行谁</li>
+<li>defer：等html全部加载才会执行js，并且顺次执行js。</li>
+</ul>
+<h2 id="9、null和undefined有什么区别？"><a href="#9、null和undefined有什么区别？" class="headerlink" title="9、null和undefined有什么区别？"></a>9、null和undefined有什么区别？</h2><ul>
+<li>最初设计时借鉴了java只设计了null作为“无”的值，但是null是一个对象。会被转换为0。很不容易发先错误。而undefined的出现是为了填补之前的不足。null表示为“无”的空对象指针，转换值为0。undefined表示“无” 的原始值，转换为值NaN.</li>
+</ul>
+<h2 id="10、js的宏任务和微任务？"><a href="#10、js的宏任务和微任务？" class="headerlink" title="10、js的宏任务和微任务？"></a>10、js的宏任务和微任务？</h2><ul>
+<li>js是单线程的。js的执行流程为：<blockquote>
+<p>执行同步&#x3D;&#x3D;&#x3D;》事件循环【宏（定时器）、微任务（promise then）】</p>
+</blockquote>
+</li>
+</ul>
+<blockquote>
+<p>要执行宏任务的前提就是清空了微任务。</p>
+</blockquote>
+<blockquote>
+<p>同步&#x3D;》微任务&#x3D;》宏任务&#x3D;》微…..（循环）</p>
+</blockquote>
+<h2 id="11、理解js的作用域？"><a href="#11、理解js的作用域？" class="headerlink" title="11、理解js的作用域？"></a>11、理解js的作用域？</h2><ul>
+<li>除了函数外，js是没有块级作用域的；</li>
+<li>作用域链：内部可以访问外部变量，但是外部不能访问内部变量（如果内部存在，先查找内部，否则向外部查找）</li>
+<li>注意声明变量是用var还是其他的关键词（window）</li>
+<li>js 有变量提升机制（变量悬挂声明）</li>
+<li><strong>面试规则</strong>：<blockquote>
+<p>1.本层作用域有没有变量（变量提升）；<br>2.注意js除了函数外，有没有块级作用域；<br>3.优先级：声明变量&gt;声明普通函数&gt;变量提升<br>4.普通函数声明是不看写函数的顺序的</p>
+</blockquote>
+</li>
+</ul>
+<h2 id="12、js对象考题？"><a href="#12、js对象考题？" class="headerlink" title="12、js对象考题？"></a>12、js对象考题？</h2><ul>
+<li>所有的对象都是通过new出来的，所以它们不相等！</li>
+<li>对象注意引用类型；</li>
+<li>对象的key都是字符串类型的；</li>
+<li>查找对象的方法或属性顺序：<blockquote>
+<p>现在对象本身找—-&gt;构造函数—-&gt;对象原型—-&gt;构造函数原型—-&gt;对象上层原型</p>
+</blockquote>
+</li>
+</ul>
+<h2 id="13、js判断是不是数组？"><a href="#13、js判断是不是数组？" class="headerlink" title="13、js判断是不是数组？"></a>13、js判断是不是数组？</h2><ul>
+<li>1、isArray()</li>
+<li>2、instanceof arr</li>
+<li>3、通过原型 <code>prototype.toString.call(arr).indexOf(&quot;Array&quot;) &gt; -1</code></li>
+<li>4、<code>Array.prototype.isProtypeOf(arr)</code></li>
+<li>5、<code>arr.constructor.toString(),indexOf(&#39;Array&#39;) &gt; -1</code></li>
+</ul>
+<h2 id="14、js数组去重？"><a href="#14、js数组去重？" class="headerlink" title="14、js数组去重？"></a>14、js数组去重？</h2><ul>
+<li>1、 new Set &#x3D;&#x3D;》 <code>Array.from(new set(arr))</code> 或者 <code>[...new Set(arr)]</code></li>
+<li>2、indexOf 循环</li>
+<li>3、sort 先排序，然后对比和前一项是否相等；</li>
+</ul>
+<h2 id="15、js的new操作符做了什么？"><a href="#15、js的new操作符做了什么？" class="headerlink" title="15、js的new操作符做了什么？"></a>15、js的new操作符做了什么？</h2><ul>
+<li>1、创建空的对象；</li>
+<li>2、将空对象的原型指向构造函数的原型；</li>
+<li>3、将空对象作为构造函数的上下文（改变this指向）；</li>
+<li>4、对构造函数有返回值做判断处理。</li>
+</ul>
+<h2 id="16、js有哪些继承方式？"><a href="#16、js有哪些继承方式？" class="headerlink" title="16、js有哪些继承方式？"></a>16、js有哪些继承方式？</h2><ul>
+<li>1、es6  的 extends</li>
+<li>2、原型链继承——子类的prototype等于父类的实例；</li>
+<li>3、构造函数继承——Parent.call(this);</li>
+<li>4、组合继承</li>
+</ul>
+<h2 id="17、js中的call、apply、bind有什么区别？"><a href="#17、js中的call、apply、bind有什么区别？" class="headerlink" title="17、js中的call、apply、bind有什么区别？"></a>17、js中的call、apply、bind有什么区别？</h2><ul>
+<li><strong>共同点</strong> ：功能一致，改变函数体的this指向。</li>
+<li>call、apply会立即执行，bind返回函数体本身，需要加（）才能执行；</li>
+<li>参数不同，apply第二个参数是数组，call和bind挨个写。</li>
+</ul>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="https://usrnong.github.io">xiaomeng</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://usrnong.github.io/2023/06/30/interview_01/">https://usrnong.github.io/2023/06/30/interview_01/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://usrnong.github.io" target="_blank">xiaomeng</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E5%85%AB%E8%82%A1%E6%96%87/">八股文</a></div><div class="post_share"><div class="social-share" data-image="https://i0.hippopx.com/photos/174/613/190/mountain-landscape-mountains-landscape-steinweg-thumb.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="next-post pull-full"><a href="/2023/02/20/vue_ref/" title="vue Ref全家桶 | vue 3.2"><img class="cover" src="https://i0.hippopx.com/photos/549/89/266/audience-concert-music-entertainment-thumb.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">vue Ref全家桶 | vue 3.2</div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/img/Avatar.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">xiaomeng</div><div class="author-info__description">多做笔记，回首时，才能不留遗憾</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">26</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">5</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">5</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/Usrnong" target="_blank" title="Github"><i class="fab fa-github" style="color: #24292e;"></i></a><a class="social-icon" href="mailto:nhuimeng@foxmail.com" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #4a7dbe;"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">欢迎访问！都是以前写过的笔记！喜欢的可以收藏，如需帮助+Q1208399284</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1%E3%80%81%E5%AE%A2%E6%88%B7%E7%AB%AF%E4%B8%8E%E6%9C%8D%E5%8A%A1%E7%AB%AF%E9%80%9A%E5%B8%B8%E9%80%9A%E8%BF%87%E4%BB%80%E4%B9%88%E6%9C%BA%E5%88%B6%E5%AE%9E%E7%8E%B0%E7%99%BB%E5%BD%95%E9%AA%8C%E8%AF%81%EF%BC%9F"><span class="toc-number">1.</span> <span class="toc-text">1、客户端与服务端通常通过什么机制实现登录验证？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2%E3%80%81%E4%BB%80%E4%B9%88%E6%98%AF%E5%93%8D%E5%BA%94%E5%BC%8F%E4%BB%A5%E5%8F%8Acss%E5%AE%9E%E7%8E%B0%E5%93%8D%E5%BA%94%E5%BC%8F%E7%9A%84%E6%9C%BA%E5%88%B6%EF%BC%9F"><span class="toc-number">2.</span> <span class="toc-text">2、什么是响应式以及css实现响应式的机制？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3%E3%80%81html5%E7%9A%84%E5%AA%92%E4%BD%93%E6%A0%87%E7%AD%BE%EF%BC%9A"><span class="toc-number">3.</span> <span class="toc-text">3、html5的媒体标签：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4%E3%80%81%E5%A6%82%E4%BD%95%E7%90%86%E8%A7%A3dom%E4%B8%8Ebom%EF%BC%9F"><span class="toc-number">4.</span> <span class="toc-text">4、如何理解dom与bom？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5%E3%80%81jq%E4%B8%AD%E7%9A%84-get%EF%BC%88%EF%BC%89-%E5%92%8Ceq%EF%BC%88%EF%BC%89%E6%9C%89%E4%BB%80%E4%B9%88%E5%8C%BA%E5%88%AB%EF%BC%9F"><span class="toc-number">5.</span> <span class="toc-text">5、jq中的 get（） 和eq（）有什么区别？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6%E3%80%81%E5%AF%B9%E4%BA%8Ejs%E6%A8%A1%E5%9D%97%E5%8C%96%E7%9A%84%E7%90%86%E8%A7%A3%EF%BC%9F"><span class="toc-number">6.</span> <span class="toc-text">6、对于js模块化的理解？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#7%E3%80%81%E4%BB%80%E4%B9%88%E6%98%AF%E9%97%AD%E5%8C%85%EF%BC%9F"><span class="toc-number">7.</span> <span class="toc-text">7、什么是闭包？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#8%E3%80%81js%E5%BB%B6%E8%BF%9F%E5%8A%A0%E8%BD%BD%E7%9A%84%E6%96%B9%E5%BC%8F%EF%BC%9F"><span class="toc-number">8.</span> <span class="toc-text">8、js延迟加载的方式？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#9%E3%80%81null%E5%92%8Cundefined%E6%9C%89%E4%BB%80%E4%B9%88%E5%8C%BA%E5%88%AB%EF%BC%9F"><span class="toc-number">9.</span> <span class="toc-text">9、null和undefined有什么区别？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#10%E3%80%81js%E7%9A%84%E5%AE%8F%E4%BB%BB%E5%8A%A1%E5%92%8C%E5%BE%AE%E4%BB%BB%E5%8A%A1%EF%BC%9F"><span class="toc-number">10.</span> <span class="toc-text">10、js的宏任务和微任务？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#11%E3%80%81%E7%90%86%E8%A7%A3js%E7%9A%84%E4%BD%9C%E7%94%A8%E5%9F%9F%EF%BC%9F"><span class="toc-number">11.</span> <span class="toc-text">11、理解js的作用域？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#12%E3%80%81js%E5%AF%B9%E8%B1%A1%E8%80%83%E9%A2%98%EF%BC%9F"><span class="toc-number">12.</span> <span class="toc-text">12、js对象考题？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#13%E3%80%81js%E5%88%A4%E6%96%AD%E6%98%AF%E4%B8%8D%E6%98%AF%E6%95%B0%E7%BB%84%EF%BC%9F"><span class="toc-number">13.</span> <span class="toc-text">13、js判断是不是数组？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#14%E3%80%81js%E6%95%B0%E7%BB%84%E5%8E%BB%E9%87%8D%EF%BC%9F"><span class="toc-number">14.</span> <span class="toc-text">14、js数组去重？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#15%E3%80%81js%E7%9A%84new%E6%93%8D%E4%BD%9C%E7%AC%A6%E5%81%9A%E4%BA%86%E4%BB%80%E4%B9%88%EF%BC%9F"><span class="toc-number">15.</span> <span class="toc-text">15、js的new操作符做了什么？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#16%E3%80%81js%E6%9C%89%E5%93%AA%E4%BA%9B%E7%BB%A7%E6%89%BF%E6%96%B9%E5%BC%8F%EF%BC%9F"><span class="toc-number">16.</span> <span class="toc-text">16、js有哪些继承方式？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#17%E3%80%81js%E4%B8%AD%E7%9A%84call%E3%80%81apply%E3%80%81bind%E6%9C%89%E4%BB%80%E4%B9%88%E5%8C%BA%E5%88%AB%EF%BC%9F"><span class="toc-number">17.</span> <span class="toc-text">17、js中的call、apply、bind有什么区别？</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2023/06/30/interview_01/" title="常见前端面试八股文（01）"><img src="https://i0.hippopx.com/photos/174/613/190/mountain-landscape-mountains-landscape-steinweg-thumb.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="常见前端面试八股文（01）"/></a><div class="content"><a class="title" href="/2023/06/30/interview_01/" title="常见前端面试八股文（01）">常见前端面试八股文（01）</a><time datetime="2023-06-29T16:00:00.000Z" title="发表于 2023-06-30 00:00:00">2023-06-30</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2023/02/20/vue_ref/" title="vue Ref全家桶 | vue 3.2"><img src="https://i0.hippopx.com/photos/549/89/266/audience-concert-music-entertainment-thumb.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="vue Ref全家桶 | vue 3.2"/></a><div class="content"><a class="title" href="/2023/02/20/vue_ref/" title="vue Ref全家桶 | vue 3.2">vue Ref全家桶 | vue 3.2</a><time datetime="2023-02-19T16:00:00.000Z" title="发表于 2023-02-20 00:00:00">2023-02-20</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2023/02/17/vue_telepot/" title="vue内置telepot 传送组件  | vue 3.2"><img src="https://i0.hippopx.com/photos/1021/62/505/play-stone-colorful-smilies-funny-thumb.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="vue内置telepot 传送组件  | vue 3.2"/></a><div class="content"><a class="title" href="/2023/02/17/vue_telepot/" title="vue内置telepot 传送组件  | vue 3.2">vue内置telepot 传送组件  | vue 3.2</a><time datetime="2023-02-16T16:00:00.000Z" title="发表于 2023-02-17 00:00:00">2023-02-17</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2023/02/16/vue_sup/" title="vue 异步组件&amp;&amp;代码分包&amp;&amp;suspense  | vue 3.2"><img src="https://i0.hippopx.com/photos/207/697/315/fire-smoke-smoke-fire-match-thumb.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="vue 异步组件&amp;&amp;代码分包&amp;&amp;suspense  | vue 3.2"/></a><div class="content"><a class="title" href="/2023/02/16/vue_sup/" title="vue 异步组件&amp;&amp;代码分包&amp;&amp;suspense  | vue 3.2">vue 异步组件&amp;&amp;代码分包&amp;&amp;suspense  | vue 3.2</a><time datetime="2023-02-15T16:00:00.000Z" title="发表于 2023-02-16 00:00:00">2023-02-16</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2023/02/15/vue_slot/" title="vue 插槽slot  | vue 3.2"><img src="https://i0.hippopx.com/photos/223/870/478/lightning-thunder-lightning-storm-storm-thumb.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="vue 插槽slot  | vue 3.2"/></a><div class="content"><a class="title" href="/2023/02/15/vue_slot/" title="vue 插槽slot  | vue 3.2">vue 插槽slot  | vue 3.2</a><time datetime="2023-02-14T16:00:00.000Z" title="发表于 2023-02-15 00:00:00">2023-02-15</time></div></div></div></div></div></div></main><footer id="footer" style="background-image: url('https://i0.hippopx.com/photos/174/613/190/mountain-landscape-mountains-landscape-steinweg-thumb.jpg')"><div id="footer-wrap"><div class="copyright">&copy;2023 By xiaomeng</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"></div><script src="/js/index.js"></script></div><!-- hexo injector body_end start --> <script data-pjax>if(document.getElementById('recent-posts') && (location.pathname ==='/'|| '/' ==='all')){
+    var parent = document.getElementById('recent-posts');
+    var child = '<div class="recent-post-item" style="width:100%;height: auto"><div id="catalog_magnet"><div class="magnet_item"><a class="magnet_link" href="https://usrnong.github.io/tags/vue/"><div class="magnet_link_context" style=""><span style="font-weight:500;flex:1">📚 vue3.2小知识 (15)</span><span style="padding:0px 4px;border-radius: 8px;"><i class="fas fa-arrow-circle-right"></i></span></div></a></div><div class="magnet_item"><a class="magnet_link" href="https://usrnong.github.io/tags/react/"><div class="magnet_link_context" style=""><span style="font-weight:500;flex:1">🔑 react17+小总结 (4)</span><span style="padding:0px 4px;border-radius: 8px;"><i class="fas fa-arrow-circle-right"></i></span></div></a></div><div class="magnet_item"><a class="magnet_link" href="https://usrnong.github.io/tags/webpack/"><div class="magnet_link_context" style=""><span style="font-weight:500;flex:1">🎯 webpack配置理解 (5)</span><span style="padding:0px 4px;border-radius: 8px;"><i class="fas fa-arrow-circle-right"></i></span></div></a></div><div class="magnet_item"><a class="magnet_link" href="https://usrnong.github.io/tags/八股文/"><div class="magnet_link_context" style=""><span style="font-weight:500;flex:1">👩‍💻 常见的一些面试题 (1)</span><span style="padding:0px 4px;border-radius: 8px;"><i class="fas fa-arrow-circle-right"></i></span></div></a></div><a class="magnet_link_more"  href="https://usrnong.github.io/tags" style="flex:1;text-align: center;margin-bottom: 10px;">查看更多...</a></div></div>';
+    parent.insertAdjacentHTML("afterbegin",child)}
+     </script><style>#catalog_magnet{flex-wrap: wrap;display: flex;width:100%;justify-content:space-between;padding: 10px 10px 0 10px;align-content: flex-start;}.magnet_item{flex-basis: calc(50% - 5px);background: #f2f2f2;margin-bottom: 10px;border-radius: 8px;transition: all 0.2s ease-in-out;}.magnet_item:hover{background: #3eb8be}.magnet_link_more{color:#555}.magnet_link{color:black}.magnet_link:hover{color:white}@media screen and (max-width: 600px) {.magnet_item {flex-basis: 100%;}}.magnet_link_context{display:flex;padding: 10px;font-size:16px;transition: all 0.2s ease-in-out;}.magnet_link_context:hover{padding: 10px 20px;}</style>
+    <style></style><script data-pjax>
+  function butterfly_swiper_injector_config(){
+    var parent_div_git = document.getElementById('recent-posts');
+    var item_html = '<div class="recent-post-item" style="height: auto;width: 100%"><div class="blog-slider swiper-container-fade swiper-container-horizontal" id="swiper_container"><div class="blog-slider__wrp swiper-wrapper" style="transition-duration: 0ms;"><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="2022/07/22/redux/" alt=""><img width="48" height="48" src="https://i0.hippopx.com/photos/435/132/23/book-open-pitched-book-pages-thumb.jpg" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2022-07-22</span><a class="blog-slider__title" href="2022/07/22/redux/" alt="">redux使用入门</a><div class="blog-slider__text">redux的基本使用、三大原则、步骤等小结</div><a class="blog-slider__button" href="2022/07/22/redux/" alt="">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="2022/07/15/react_hooks/" alt=""><img width="48" height="48" src="https://i0.hippopx.com/photos/191/894/412/london-parliament-england-ben-ben-thumb.jpg" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2022-07-15</span><a class="blog-slider__title" href="2022/07/15/react_hooks/" alt="">react hooks不得不说的二三事  | react 16.8 +</a><div class="blog-slider__text">内置hooks和自定义hooks的理解</div><a class="blog-slider__button" href="2022/07/15/react_hooks/" alt="">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="2023/02/10/vue_pinia/" alt=""><img width="48" height="48" src="https://i0.hippopx.com/photos/277/960/60/italy-sicily-sea-ocean-thumb.jpg" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2023-02-10</span><a class="blog-slider__title" href="2023/02/10/vue_pinia/" alt="">vue pinia 全局状态管理工具  | vue 3.2</a><div class="blog-slider__text">vue pinia 全局状态管理工具 使用小结</div><a class="blog-slider__button" href="2023/02/10/vue_pinia/" alt="">详情   </a></div></div></div><div class="blog-slider__pagination swiper-pagination-clickable swiper-pagination-bullets"></div></div></div>';
+    console.log('已挂载butterfly_swiper')
+    parent_div_git.insertAdjacentHTML("afterbegin",item_html)
+    }
+  var elist = 'undefined'.split(',');
+  var cpage = location.pathname;
+  var epage = 'all';
+  var flag = 0;
+
+  for (var i=0;i<elist.length;i++){
+    if (cpage.includes(elist[i])){
+      flag++;
+    }
+  }
+
+  if ((epage ==='all')&&(flag == 0)){
+    butterfly_swiper_injector_config();
+  }
+  else if (epage === cpage){
+    butterfly_swiper_injector_config();
+  }
+  </script><script defer src="https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper.min.js"></script><script defer data-pjax src="https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper_init.js"></script><!-- hexo injector body_end end --></body></html>
